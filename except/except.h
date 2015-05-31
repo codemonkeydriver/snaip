@@ -25,7 +25,7 @@ struct Except_frame {
 };
 
 extern Except_Frame *except_stack;
-void Except_raise(const Except_T *exception, const char *file, int line);
+void Except_raise(const Except_T *exception, const char *file, const int line);
 
 #define RAISE(e) Except_raise(&(e), __FILE__, __LINE__)
 
